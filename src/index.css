@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .icon {
+   @apply w-6 h-6
+  }
+  .nav {
+    @apply flex flex-col text-xl font-medium h-screen w-1/2 justify-evenly items-center font-mono fixed z-10 bg-zinc-50 shadow-2xl
+  }
+}
