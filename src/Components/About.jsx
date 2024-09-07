@@ -11,7 +11,7 @@ const About = () => {
           <img
             src={picture}
             alt="profile pictuere"
-            className=" aspect-square w-1/3 rounded-full max-w-full object-cover object-center mx-auto"
+            className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"
           />
         </div>
         <p className=" text-center font-semibold font-mono text-xl">
@@ -28,7 +28,7 @@ const About = () => {
       <div className="lg:flex flex-row-reverse items-center gap-3 lg:mt-4">
         <div className="flex w-3/5 justify-evenly mx-auto my-6  lg:flex-col lg:w-1/3 lg:gap-4 ">
           <div className="flex flex-col items-center gap-2  text-red-600 m-auto">
-            <a className="mx-auto" href={resume} download={resume}>
+            <a className="lg:mx-auto" href={resume} download={resume}>
               <svg
                 class="menu__icon"
                 version="1.1"
@@ -54,15 +54,15 @@ const About = () => {
                 ></path>
               </svg>
             </a>
-            <a href={resume} className="font-medium font mx-auto ">
+            <a href={resume} className="font-medium font lg:mx-auto ">
               VIEW RESUME
             </a>
-            <a href={resume} download={resume} className="text-xs mx-auto">
+            <a href={resume} download={resume} className="text-xs lg:mx-auto">
               DOWNLOAD RESUME
             </a>
           </div>
           <div className="flex flex-col gap-2 text-red-600 m-auto">
-            <a className="mx-auto" href="https://github.com/marycynthia2020">
+            <a className="lg:mx-auto" href="https://github.com/marycynthia2020">
               <svg
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 class="menu__icon"
@@ -92,13 +92,13 @@ const About = () => {
             </a>
             <a
               href="https://github.com/marycynthia2020"
-              className="font-medium font mx-auto"
+              className="font-medium fontlg:mx-auto"
             >
               GITHUB
             </a>
             <a
               href="https://github.com/marycynthia2020"
-              className="text-xs mx-auto"
+              className="text-xs lg:mx-auto"
             >
               VIEW GITHUB REPOSITORY
             </a>
