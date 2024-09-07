@@ -46,8 +46,7 @@ const Home = () => {
         </div>
         <nav className={`${
             mobile ? " w-1/2 flex flex-col text-xl font-medium h-screen justify-evenly items-center font-mono fixed bg-zinc-50 :shadow-2xl border-2 border-zinc-100" : "hidden"
-          } flex-col text-xl font-medium h-screen lg:flex md:w-1/5 lg:justify-evenly lg:items-center md:font-mono md:fixed md:z-10 md:bg-zinc-50 md:shadow-2xl md: border-zinc-100`}
-        >
+          } md:flex-col md:text-xl md:font-medium md:h-screen md:flex md:w-1/5 md:justify-evenly md:items-center md:font-mono md:fixed md:z-10 md:bg-zinc-50 md:shadow-2xl md: border-zinc-100`}>
           <NavLink to ="/section/about">About</NavLink>
           <NavLink to ="/section/skills">Skills</NavLink>
           <NavLink to ="/section/education">Education</NavLink>
@@ -81,18 +80,3 @@ const Home = () => {
   )
 }
 
-export default Home
-
-
-//  <nav
-//           className={`${
-//             mobile ? "flex" : "hidden"
-//           } flex-col text-xl font-medium h-screen lg:flex lg:w-1/5 lg:justify-evenly lg:items-center lg:font-mono lg:fixed lg:z-10 lg:bg-zinc-50 lg:shadow-2xl`}
-//         >
-//           <NavLink to="/section/about">About</NavLink>
-//           <NavLink to="/section/skills">Skills</NavLink>
-//           <NavLink to="/section/education">Education</NavLink>
-//           <NavLink to="/section/projects">Projects</NavLink>
-//           <NavLink to="/section/interest">Interests</NavLink>
-//           <NavLink to="/section/contact">Contact</NavLink>
-//         </nav>
