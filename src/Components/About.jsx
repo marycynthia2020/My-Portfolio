@@ -26,7 +26,7 @@ const About = () => {
       </div>
 
       <div className="lg:flex flex-row-reverse items-center gap-3 lg:mt-4">
-        <div className="flex w-3/5 justify-evenly mx-auto my-6  lg:flex-col lg:w-1/3 lg:gap-4 ">
+        <div className="flex w-4/5 justify-evenly mx-auto my-6  lg:flex-col lg:w-1/3 lg:gap-4 ">
           <div className="flex flex-col items-center gap-2  text-red-600 m-auto">
             <a className="lg:mx-auto" href={resume} download={resume}>
               <svg
