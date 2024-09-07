@@ -8,6 +8,7 @@ import Interests from "./Interests"
 import Contact from "./Contact"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import resume from "/resume.pdf"
 
 
 const Home = () => {
@@ -45,7 +46,7 @@ const Home = () => {
           <button className=" float-right p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>
         </div>
         <nav className={`${
-            mobile ? " w-1/2 flex flex-col text-xl font-medium h-screen justify-evenly items-center font-mono fixed bg-zinc-50 :shadow-2xl border-2 border-zinc-100" : "hidden"
+            mobile ? " w-1/2 flex flex-col text-xl font-medium h-screen justify-evenly items-center font-mono fixed bg-zinc-50 :shadow-2xl border-2 border-zinc-100 z-10" : "hidden"
           } md:flex-col md:text-xl md:font-medium md:h-screen md:flex md:w-1/5 md:justify-evenly md:items-center md:font-mono md:fixed md:z-10 md:bg-zinc-50 md:shadow-2xl md: border-zinc-100`}>
           <NavLink to ="/section/about">About</NavLink>
           <NavLink to ="/section/skills">Skills</NavLink>
@@ -53,25 +54,26 @@ const Home = () => {
           <NavLink to ="/section/projects">Projects</NavLink>
           <NavLink to ="/section/interest">Interests</NavLink>
           <NavLink to ="/section/contact">Contact</NavLink>
+          
         </nav>
       </div>
-      <div>
-      <section ref={refs.about} style={{height: "50vh"}}>
+      <div className=" w-full md:w-3/4">
+      <section ref={refs.about}>
         <About />
       </section>
-      <section ref={refs.skills} style={{height: "100vh"}}>
+      <section ref={refs.skills} >
         <Skills />
       </section>
-      <section ref={refs.education} style={{height: "100vh"}}>
+      <section ref={refs.education} >
         <Education />
       </section>
-      <section ref={refs.projects} style={{height: "100vh"}}>
+      <section ref={refs.projects} >
         <Projects />
       </section>
-      <section ref={refs.interest} style={{height: "100vh"}}>
+      <section ref={refs.interest} >
         <Interests />
       </section>
-      <section ref={refs.contact} style={{height: "100vh"}} >
+      <section ref={refs.contact} >
         <Contact />
       </section>
       </div>
@@ -80,3 +82,4 @@ const Home = () => {
   )
 }
 
+export default Home
