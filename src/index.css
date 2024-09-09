@@ -12,9 +12,6 @@
   .bold{
     @apply font-bold
   }
-/* .menu__icon  {
-  @apply transition fill-red-500;
-} */
  
 .menu__icon:hover path  {
   @apply fill-red-500 
@@ -22,6 +19,12 @@
 .menu__icon:active path  {
   @apply fill-red-500 
 }
+.NavLink{
+  @apply flex justify-center flex-col items-center hover:text-red-600
+}
+.NavLink:active {
+  @apply text-red-600
 
+}
 
 } 

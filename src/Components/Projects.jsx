@@ -30,9 +30,9 @@ const Projects = () => {
 
 
   return (
-    <div>
-       <p className="text-xl font-bold font-mono text-center">PROJECTS</p>
-      <div className="mx-2 h-auto my-12 min-h-screen lg:grid lg:grid-cols-2 lg:gap-4" >
+    <div className="mx-2 h-auto my-14 min-h-screen" >
+       <p className="text-xl font-bold font-mono text-center my-8 ">PROJECTS</p>
+      <div className="lg:grid lg:grid-cols-2 lg:gap-4" >
      
       {projectList}
     </div>
