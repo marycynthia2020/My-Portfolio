@@ -16,8 +16,10 @@ const Home = () => {
 
   const handleClick = () => {
     setMobile(!mobile)
+  }
 
-
+  const handleTouch = () => {
+    setMobile(false) 
   }
 
   const refs = {
@@ -37,7 +39,7 @@ const Home = () => {
 
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between" >
       <div>
         <div className=" absolute top-0 left-0 md:hidden z-50" >
           <button className=" float-right  fixed p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>
@@ -53,7 +55,7 @@ const Home = () => {
           
         </nav>
       </div>
-      <div className=" w-full md:w-3/4">
+      <div className=" w-full md:w-3/4" onTouchStart={handleTouch}>
       <section ref={refs.about}>
         <About />
       </section>
