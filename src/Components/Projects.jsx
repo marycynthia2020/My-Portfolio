@@ -9,7 +9,7 @@ const Projects = () => {
   return (
   <div className="w-full shadow-2xl bg-red-600 rounded-lg p-4 my-8">
     <div className="w-4/4">
-    <img src={image} alt={name} className="mx-auto aspect-square h-60 rounded-lg max-w-full"/>
+    <img src={image} alt={name} className="mx-auto aspect-square w-full rounded-lg max-w-full"/>
     </div>
     <p className="text-base tracking-wide leading-loose font-bold">{name}</p>
     <p className="text-base tracking-wide leading-loose"></p>
