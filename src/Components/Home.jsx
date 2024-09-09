@@ -3,7 +3,6 @@ import { NavLink, useParams } from "react-router-dom"
 import About from "./About"
 import Skills from "./Skills"
 import Projects from "./Projects"
-import Interests from "./Interests"
 import Contact from "./Contact"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
@@ -25,7 +24,6 @@ const Home = () => {
   const refs = {
     about: useRef(),
     contact: useRef(),
-    interest: useRef(),
     projects: useRef(),
     skills: useRef(),
   };
@@ -39,7 +37,7 @@ const Home = () => {
 
 
   return (
-    <div className="flex justify-between" >
+    <div className="flex justify-between bg-white" >
       <div>
         <div className=" absolute top-0 left-0 md:hidden z-50" >
           <button className=" float-right  fixed p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>
@@ -50,12 +48,11 @@ const Home = () => {
           <NavLink to ="/section/about">About</NavLink>
           <NavLink to ="/section/skills">Tech Stack</NavLink>
           <NavLink to ="/section/projects">Projects</NavLink>
-          <NavLink to ="/section/interest">Interests</NavLink>
           <NavLink to ="/section/contact">Contact</NavLink>
           
         </nav>
       </div>
-      <div className=" w-full md:w-3/4" onTouchStart={handleTouch}>
+      <div className="w-full md:w-3/4" onTouchStart={handleTouch}>
       <section ref={refs.about}>
         <About />
       </section>
@@ -64,9 +61,6 @@ const Home = () => {
       </section>
       <section ref={refs.projects} >
         <Projects />
-      </section>
-      <section ref={refs.interest} >
-        <Interests />
       </section>
       <section ref={refs.contact} >
         <Contact />

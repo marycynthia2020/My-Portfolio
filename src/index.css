@@ -12,4 +12,16 @@
   .bold{
     @apply font-bold
   }
+/* .menu__icon  {
+  @apply transition fill-red-500;
+} */
+ 
+.menu__icon:hover path  {
+  @apply fill-red-500 
 }
+.menu__icon:active path  {
+  @apply fill-red-500 
+}
+
+
+} 
