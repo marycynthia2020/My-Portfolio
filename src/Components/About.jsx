@@ -55,7 +55,7 @@ const About = () => {
               </svg>
             </a>
             <a href={resume} className="font-medium font lg:mx-auto ">
-              VIEW RESUME
+             RESUME
             </a>
             <a href={resume} download={resume} className="text-xs lg:mx-auto">
               DOWNLOAD RESUME
