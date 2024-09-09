@@ -7,7 +7,6 @@ import Interests from "./Interests"
 import Contact from "./Contact"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
-import resume from "/resume.pdf"
 
 
 const Home = () => {
@@ -41,7 +40,7 @@ const Home = () => {
     <div className="flex justify-between">
       <div>
         <div className=" absolute top-0 left-0 md:hidden z-50" >
-          <button className=" float-right p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>
+          <button className=" float-right  fixed p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>
         </div>
         <nav className={`${
             mobile ? " w-1/2 flex flex-col text-xl font-medium h-screen justify-evenly items-center font-mono fixed bg-zinc-50 :shadow-2xl border-2 border-zinc-100 z-10" : "hidden"
