@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react"
 import { NavLink, useParams } from "react-router-dom"
 import About from "./About"
 import Skills from "./Skills"
-import Education from "./Education"
 import Projects from "./Projects"
 import Interests from "./Interests"
 import Contact from "./Contact"
@@ -25,7 +24,6 @@ const Home = () => {
   const refs = {
     about: useRef(),
     contact: useRef(),
-    education: useRef(),
     interest: useRef(),
     projects: useRef(),
     skills: useRef(),
@@ -49,8 +47,7 @@ const Home = () => {
             mobile ? " w-1/2 flex flex-col text-xl font-medium h-screen justify-evenly items-center font-mono fixed bg-zinc-50 :shadow-2xl border-2 border-zinc-100 z-10" : "hidden"
           } md:flex-col md:text-xl md:font-medium md:h-screen md:flex md:w-1/5 md:justify-evenly md:items-center md:font-mono md:fixed md:z-10 md:bg-zinc-50 md:shadow-2xl md: border-zinc-100`}>
           <NavLink to ="/section/about">About</NavLink>
-          <NavLink to ="/section/skills">Skills</NavLink>
-          <NavLink to ="/section/education">Education</NavLink>
+          <NavLink to ="/section/skills">Tech Stack</NavLink>
           <NavLink to ="/section/projects">Projects</NavLink>
           <NavLink to ="/section/interest">Interests</NavLink>
           <NavLink to ="/section/contact">Contact</NavLink>
@@ -61,11 +58,8 @@ const Home = () => {
       <section ref={refs.about}>
         <About />
       </section>
-      <section ref={refs.skills} >
+      <section ref={refs.skills} className="scroll-snap-start" >
         <Skills />
-      </section>
-      <section ref={refs.education} >
-        <Education />
       </section>
       <section ref={refs.projects} >
         <Projects />

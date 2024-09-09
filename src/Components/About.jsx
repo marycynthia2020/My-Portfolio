@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="mx-2 my-12 h-auto">
+    <div className="mx-2  my-12 h-auto min-h-screen ">
       <div className="flex flex-col items-center tracking-widest">
         <div className="w-1/2 ">
           <img
@@ -14,7 +14,7 @@ const About = () => {
             className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"
           />
         </div>
-        <p className=" text-center font-semibold font-mono text-xl">
+        <p className=" text-center text-xl font-bold font-mono">
           CHINEMEREM MARYCYNTHIA UGBAJA
         </p>
         <p className=" text-center font-sans text-xs m-auto leading-relaxed tracking-wide">
