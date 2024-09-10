@@ -9,7 +9,7 @@ const Projects = () => {
   return (
   <div className="w-full shadow-xl rounded-lg p-4 mx-auto h-auto border-2 border-slate-100  hover:border-red-100 hover:shadow-2xl hover:animate-pulse active:border-red-100 active:shadow-2xl active:animate-pulse">
     <div className="w-4/4">
-    <img src={image} alt={name} className=" border-2 border-black w-full mx-auto aspect-square object-cover object-center rounded-lg max-w-full lg:h-60 hover:grayscale"/>
+    <img src={image} alt={name} className=" border-2 border-black w-full mx-auto aspect-square object-cover h-auto rounded-lg max-w-full lg:h-60 hover:grayscale"/>
     </div>
     <p className="text-xl tracking-wide leading-loose font-bold w-full mt-4">{name}</p>
     <p className="text-base tracking-wide leading-loose w-full ">{description}</p>
