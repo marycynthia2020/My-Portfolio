@@ -40,7 +40,7 @@
   @apply text-base
 }
 .button {
-  @apply text-center p-2 border-2 border-slate-100 font-medium w-2/12 rounded-md bg-red-500
+  @apply text-center border-2 py-2 px-4 border-slate-100 font-medium max-w-fit rounded-md bg-red-500
 }
 
 } 
