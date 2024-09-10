@@ -4,9 +4,9 @@ const Skills = () => {
   return (
     <div className="mx-2 h-auto my-12 min-h-screen flex flex-start flex-col justify-between items-center lg:flex-row-reverse" >
       <div className="w-1/2 ">
-        <img src={tech} alt="tech stack" className=" aspect-square w-2/3 lg:w-1/2 max-w-full mx-auto animate-pulse "/>
+        <img src={tech} alt="tech stack" className=" w-2/3 lg:w-1/2 max-w-full mx-auto animate-pulse "/>
       </div>
-      <ul className="w-full list-disc text-base tracking-wide leading-loose lg:w-2/3 mt-4 pl-4">
+      <ul className="w-full list-disc text-base tracking-wide leading-loose lg:w-2/3 mt-4 pl-8 lg:pl-4">
       <li className=" text-center list-none text-xl font-bold font-mono my-8">TECH STACK</li>
         <li>
           Languages: <span className="bold">HTML, CSS, Javascript.</span>
