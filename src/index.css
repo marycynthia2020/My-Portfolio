@@ -27,8 +27,11 @@
 
 }
 
+.contact{
+  @apply  text-center font-sans text-xs m-auto leading-relaxed tracking-wide 
+}
 .form {
-  @apply flex flex-col gap-4 w-full p-4 m-4 shadow-2xl rounded-lg  mx-auto border-2 border-slate-100
+  @apply flex flex-col gap-4 w-full p-4 m-4 shadow-2xl rounded-lg  mx-auto border-2 border-slate-100 mb-10
 }
 .label-container {
   @apply container flex flex-col gap-1 font-sans text-sm leading-relaxed tracking-wide text-slate-600
