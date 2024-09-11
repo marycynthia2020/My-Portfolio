@@ -11,6 +11,9 @@
   .nav {
     @apply flex flex-col text-xl font-medium h-screen w-1/2 justify-evenly items-center font-mono fixed z-10  shadow-2xl
   }
+  .about {
+    @apply text-center font-sans text-xs m-auto leading-relaxed tracking-wide
+  }
 
   .bold{
     @apply font-bold

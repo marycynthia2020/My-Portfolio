@@ -11,18 +11,11 @@ const About = () => {
           <img
             src={picture}
             alt="profile pictuere"
-            className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"
-          />
+            className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"/>
         </div>
-        <p className=" text-center text-xl font-bold font-mono">
-          CHINEMEREM MARYCYNTHIA UGBAJA
-        </p>
-        <p className=" text-center font-sans text-xs m-auto leading-relaxed tracking-wide">
-          FRONTEND DEVELOPER
-        </p>
-        <p className=" text-center font-sans text-xs m-auto leading-relaxed tracking-wide">
-          I'M COMMITTED TO MAKING THE WEB MORE BEAUTIFUL, ONE PIXEL AT A TIME{" "}
-        </p>
+        <p className=" text-center text-xl font-bold font-mono">CHINEMEREM MARYCYNTHIA UGBAJA</p>
+        <p className="about">FRONTEND DEVELOPER</p>
+        <p className=" about">I'M COMMITTED TO MAKING THE WEB MORE BEAUTIFUL, ONE PIXEL AT A TIME</p>
       </div>
 
       <div className="lg:flex flex-row-reverse items-center gap-3 lg:mt-4">
