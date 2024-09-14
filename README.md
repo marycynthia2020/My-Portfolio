@@ -36,7 +36,7 @@ Formik: For form validation
 Formspree: For form submission
 Netlify: For hosting the website, ensuring fast and secure access to the content.
 
-## WWhat I want to ahieve with this portfolio
+## What I want to achieve with this portfolio
 To provide a comprehensive view of my skills and projects as a frontend developer.
 To serve as a platform where I can share my progress and apply new technologies that I learn.
 To connect with potential employers, collaborators, and clients who are willingly to give me an opportunity to grow and dive fully into software engineering .
