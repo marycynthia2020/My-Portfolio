@@ -2,26 +2,23 @@ import tech from "/techstack.svg";
 
 const Skills = () => {
   return (
-    <div className="mx-2 h-auto my-12 min-h-screen flex flex-col justify-between items-center lg:flex-row-reverse" >
+    <div className="mx-2 h-auto mt-28 flex flex-col justify-between items-center lg:flex-row-reverse" >
       <div className="w-1/2 ">
         <img src={tech} alt="tech stack" className=" w-2/3 lg:w-1/2 max-w-full mx-auto animate-pulse "/>
       </div>
       <ul className="w-full list-disc text-base tracking-wide leading-loose lg:w-2/3 mt-4 pl-8 lg:pl-4">
       <li className=" text-center list-none text-xl font-bold font-mono my-8">TECH STACK</li>
         <li>
-          Languages: <span className="bold">HTML, CSS, Javascript.</span>
+          Languages: <span className="bold">HTML, CSS, Javascript, TypeScript</span>
         </li>
         <li>
           Styling: <span className="bold">TailwindCSS</span>
         </li>
         <li>
-          Framework: <span className="bold">React</span>
+          Framework: <span className="bold">React, Next.js</span>
         </li>
         <li>
           System version control: <span className="bold">GIT</span>
-        </li>
-        <li>
-          Serverless: <span className="bold">Netlify, Pages</span>
         </li>
         <li>
           {" "}

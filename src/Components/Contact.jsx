@@ -46,7 +46,7 @@ const validate = values => {
 
   return (
    
-    <div className="mx-2 h-auto my-28 min-h-screen" >
+    <div className="mx-2 h-auto mt-28" >
       <p  className="text-xl font-bold font-mono text-center my-8 ">CONTACT</p>
       <p className="contact"> CURRENTLY AVAILABLE FOR INTERNSHIPS AND JUNIOR DEVELOPER ROLES,</p>
       <p className="contact">AND WOULD LOVE TO HEAR FROM YOU</p>

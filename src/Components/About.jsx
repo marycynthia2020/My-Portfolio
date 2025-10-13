@@ -1,25 +1,30 @@
-import React from "react";
-import resume from "/resume.pdf";
+// import React from "react";
+// import resume from "/resume.pdf";
 import picture from "/pix.jpg";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="mx-2  my-12 h-auto min-h-screen ">
+    <div className="mx-2  h-auto mt-28 ">
       <div className="flex flex-col items-center tracking-widest">
         <div className="w-1/2 ">
           <img
             src={picture}
             alt="profile pictuere"
-            className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"/>
+            className=" aspect-square w-2/3 lg:w-1/2 rounded-full max-w-full object-cover object-center mx-auto"
+          />
         </div>
-        <p className=" text-center text-xl font-bold font-mono">CHINEMEREM MARYCYNTHIA UGBAJA</p>
+        <p className=" text-center text-xl font-bold font-mono">
+          CHINEMEREM MARYCYNTHIA UGBAJA
+        </p>
         <p className="about">FRONTEND DEVELOPER</p>
-        <p className=" about">I'M COMMITTED TO MAKING THE WEB MORE BEAUTIFUL, ONE PIXEL AT A TIME</p>
+        <p className=" about">
+          I'M COMMITTED TO MAKING THE WEB MORE BEAUTIFUL, ONE PIXEL AT A TIME
+        </p>
       </div>
 
       <div className="lg:flex flex-row-reverse items-center gap-3 lg:mt-4">
-        <div className="flex w-full justify-evenly mx-auto my-6  lg:flex-col lg:w-1/3 lg:gap-4 ">
+        {/* <div className="flex w-full justify-evenly mx-auto my-6  lg:flex-col lg:w-1/3 lg:gap-4 ">
           <div className="flex flex-col items-center gap-2  text-red-600 m-auto">
             <a className="lg:mx-auto" href={resume} download={resume}>
               <svg
@@ -48,7 +53,7 @@ const About = () => {
               </svg>
             </a>
             <a href={resume} className="font-medium font lg:mx-auto ">
-             RESUME
+              RESUME
             </a>
             <a href={resume} download={resume} className="text-xs lg:mx-auto">
               DOWNLOAD RESUME
@@ -96,20 +101,28 @@ const About = () => {
               VIEW GITHUB REPOSITORY
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className=" text-base tracking-wide leading-loose lg:w-2/3">
+        <div className=" text-base tracking-wide leading-loose ">
           <p className="mb-6">
-            I'm a passionate and dedicated frontend developer committed to
-            making the web more beautiful, one pixel at a time. I thrive on
-            challenges and am constantly pushing myself to learn and master new
-            technologies, frameworks, and best practices.
+            I'm a builder who believes technology should simplify life, not
+            complicate it. I find meaning in creating solutions that bridge gaps
+            — helping people connect, learn, and grow through intuitive digital
+            experiences.earn and master new technologies, frameworks, and best
+            practices.
+          </p>
+          <p className="mb-6">
+            What drives me most is the process — understanding problems deeply,
+            designing thoughtfully, and building with care. I'm constantly
+            evolving, learning from every challenge, and paying attention to the
+            little details that make a big difference in how people experience a
+            product.
           </p>
           <p>
-            I want to be involved in projects that I can be proud of, join an
-            amazing team and advance my development career. Take some time to
-            look at my resume, work and if you're interested in helping me make this
-            happen, <Link to = "/section/contact" className="text-red-700">let's get in touch</Link>.
+            Beyond the code, I value clarity, collaboration, and purpose.
+            Whether it's a personal project, a startup idea, or a team effort, I
+            approach every work with curiosity, empathy, and the mindset that
+            great things are built one intentional step at a time.
           </p>
         </div>
       </div>
@@ -118,4 +131,3 @@ const About = () => {
 };
 
 export default About;
-

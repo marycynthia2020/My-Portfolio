@@ -36,7 +36,7 @@ const Home = () => {
 
 
   return (
-    <div className="flex justify-between bg-white" >
+    <div className=" mx-auto flex justify-between bg-white pb-0" >
       <div>
         <div className=" absolute top-0 left-0 md:hidden z-50" >
           <button className=" float-right  fixed p-2 bg-black text-white "onClick ={handleClick}>{mobile? <FontAwesomeIcon icon= {faTimes} className="icon"/>: <FontAwesomeIcon icon={faBars } className="icon"/>}</button>

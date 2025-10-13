@@ -7,7 +7,7 @@ const Projects = () => {
   const{image, name, description, netlify, github} = project
   
   return (
-  <div className="w-full shadow-xl rounded-lg p-4 mx-auto my-8 lg:my-0 h-auto border-2 border-slate-100  hover:border-red-100 hover:shadow-2xl hover:animate-pulse active:border-red-100 active:shadow-2xl active:animate-pulse">
+  <div className=" w-full shadow-xl rounded-lg p-4 mx-auto my-8 lg:my-0 h-auto border-2 border-slate-100  hover:border-red-100 hover:shadow-2xl hover:animate-pulse active:border-red-100 active:shadow-2xl active:animate-pulse">
     <div className="w-4/4"> 
     <img src={image} alt={name} className=" border-2 border-black w-full mx-auto object-cover object-center rounded-lg max-w-full lg:h-60 hover:grayscale"/>
     </div>
@@ -28,7 +28,7 @@ const Projects = () => {
 
  
   return (
-    <div className="mx-2 h-auto my-12 min-h-screen" >
+    <div className="mx-2 h-auto mt-28" >
        <p className="text-xl font-bold font-mono text-center my-8 ">PROJECTS</p>
       <div className="lg:grid lg:grid-cols-2 lg:gap-4" >
      
